@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai9</title>
+</head>
+<body>
+<script>
+    let array = ["h", "e", "l", "l", "o"];
+    let character= "l";
+    function checkCharacter(arr, crt) {
+        let appear = 0;
+        let check=[];
+        for (i=0; i<arr.length-1; i++){
+            if (arr[i]== crt){
+                check.push(arr[i]);
+                appear = check.length;
+            }else appear = -1;
+        }
+        return appear;
+    }
+    alert(checkCharacter(array, character));
+</script>
+</body>
+</html>

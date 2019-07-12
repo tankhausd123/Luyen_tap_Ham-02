@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai4</title>
+</head>
+<body>
+<script>
+    let check = false;
+    let kitu= prompt("nhập kí tự:");
+    function checkNumber(character) {
+
+        if (isNaN(character) == false) {
+            check = true;
+        }
+        return check;
+    }
+    alert(checkNumber(kitu));
+</script>
+</body>
+</html>
